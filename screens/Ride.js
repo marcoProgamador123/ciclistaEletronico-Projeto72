@@ -88,11 +88,11 @@ export default class RideScreen extends Component {
           //   SHORT
           // );
 
-          // ToastAndroid.show(
-          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
-          //   ToastAndroid.SHORT
-          // );
-
+           ToastAndroid.show(
+             "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
+             ToastAndroid.SHORT
+           );
+              // IOS
          // Alert.alert(
          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!"
          // );
@@ -107,15 +107,15 @@ export default class RideScreen extends Component {
 
           // Apenas para Android
 
-          // ToastAndroid.show(
-          //   "Esperamos que tenha gostado do seu passeio",
-          //   ToastAndroid.SHORT
-          // );
+           ToastAndroid.show(
+             "Esperamos que tenha gostado do seu passeio",
+             ToastAndroid.SHORT
+           );
 
-          Alert.alert("Esperamos que tenha gostado do seu passeio");
-          this.setState({
-            bikeAssigned: false
-          });
+          // Alert.alert("Esperamos que tenha gostado do seu passeio");
+          // this.setState({
+          //   bikeAssigned: false
+          // });
         }
       });
   };
@@ -231,7 +231,7 @@ export default class RideScreen extends Component {
 
               //onChangeText={() => this.setState({ userId: text })}
               //onChangeText={this.setState({ userId: text })}
-              //onChangeText={text => this.setState({ userId: text })}
+              onChangeText={text => this.setState({ userId: text })}
               //onChangeText={(text) => this.setState({ userId: text })}
 
               placeholder={"Id do Usuário"}
